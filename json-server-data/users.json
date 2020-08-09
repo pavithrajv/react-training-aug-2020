@@ -1,0 +1,11 @@
+{
+    "allusers":[
+        {
+            "name":"test",
+            "email":"test@gmail.com",
+            "userid":"test123",
+            "pwd":"test@1",
+            "cpwd":"test@2"
+        }
+    ]
+}

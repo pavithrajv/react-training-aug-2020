@@ -1,0 +1,16 @@
+#editpro{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+}
+#deletepro{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color:#f44336;
+    color: white;
+}

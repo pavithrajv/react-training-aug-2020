@@ -1,94 +1,84 @@
 {
   "allproducts": [
     {
-      "id":"1",
-      "productID":"101",
-      "productName":"Micro camera",
-      "category":"Electronics",
-      "quantity":"2",
-      "price":"25000",
-      "inStock":"100"
+      "id": "35",
+      "productImage": "mask.jpeg",
+      "productName": "Mask",
+      "category": "Accesories",
+      "rating": "3",
+      "price": "1000",
+      "inStock": "100"
     },
     {
-      "id":"2",
-      "productID":"102",
-      "productName":"Dell Laptop",
-      "category":"Electronics",
-      "quantity":"1",
-      "price":"45000",
-      "inStock":"100"
+      "id": "40",
+      "productImage": "cheese.jpg",
+      "productName": "Butter",
+      "category": "Dairy Products",
+      "rating": "4",
+      "price": "300",
+      "inStock": "100"
     },
     {
-      "id":"3",
-      "productID":"103",
-      "productName":"Note 8 pro",
-      "category":"Electronics",
-      "quantity":"2",
-      "price":"25000",
-      "inStock":"100"
+      "id": "1",
+      "productImage": "mobile.jpg",
+      "productName": "Mobile phone",
+      "category": "Electronics",
+      "rating": "4",
+      "price": "30000",
+      "inStock": "100"
     },
     {
-      "id":"4",
-      "productID":"104",
-      "productName":"Headset",
-      "category":"Electronics",
-      "quantity":"2",
-      "price":"5000",
-      "inStock":"100"
+      "id": "2",
+      "productImage": "headset.jpg",
+      "productName": "Headset",
+      "category": "Electronics",
+      "rating": "4",
+      "price": "2000",
+      "inStock": "100"
     },
     {
-      "id":"5",
-      "productID":"105",
-      "productName":"N5 Mask",
-      "category":"Accesories",
-      "quantity":"2",
-      "price":"2000",
-      "inStock":"100"
+      "id": "3",
+      "productImage": "panner.jpeg",
+      "productName": "Pannerr",
+      "category": "Dairy Products",
+      "rating": "3",
+      "price": "300",
+      "inStock": "100"
     },
     {
-      "id":"6",
-      "productID":"106",
-      "productName":"Gloves",
-      "category":"Accesories",
-      "quantity":"2",
-      "price":"2000",
-      "inStock":"100"
+      "id": "4",
+      "productImage": "bg1.jpg",
+      "productName": "test",
+      "category": "Electronics",
+      "rating": "3",
+      "price": "100",
+      "inStock": "100"
+    }
+  ],
+  "allusers": [
+    {
+      "id": "test123",
+      "name": "test4",
+      "email": "test4@gmail.com",
+      "userid": "test123",
+      "pwd": "test",
+      "cpwd": "test"
     },
     {
-      "id":"7",
-      "productID":"107",
-      "productName":"Eyeglasses",
-      "category":"Accesories",
-      "quantity":"2",
-      "price":"2500",
-      "inStock":"100"
+      "id": "test5",
+      "name": "test5",
+      "email": "test5@gmail.com",
+      "userid": "test5",
+      "pwd": "test@5",
+      "cpwd": "test@5"
     },
     {
-      "id":"8",
-      "productID":"108",
-      "productName":"Digital Watch",
-      "category":"Accesories",
-      "quantity":"2",
-      "price":"2000",
-      "inStock":"100"
-    },
-    {
-      "id":"9",
-      "productID":"109",
-      "productName":"Panner",
-      "category":"Dairy products",
-      "quantity":"2",
-      "price":"200",
-      "inStock":"100"
-    },
-    {
-      "id":"10",
-      "productID":"110",
-      "productName":"Butter",
-      "category":"Dairy products",
-      "quantity":"2",
-      "price":"200",
-      "inStock":"100"
+      "id": "dfweefw",
+      "name": "dwerew",
+      "email": "fewgew@gmail.com",
+      "userid": "dfweefw",
+      "pwd": "vsvsd",
+      "cpwd": "vsvsd"
     }
   ]
 }

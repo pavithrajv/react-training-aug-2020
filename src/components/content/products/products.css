@@ -1,0 +1,50 @@
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 8%;
+    margin-top: 6%;
+  }
+  #customers td,
+    #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    #customers tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+      background-color: #ddd;
+    }
+
+    #customers th {
+      padding: 12px;
+      text-align: center;
+      background-color: darkblue;
+      color: white;
+    }
+    #addpro{
+    width: 180px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    background-color: darkblue;
+    float: right;
+    margin-right: -650px;
+    margin-top: 20px;
+    font-size: 20px;
+    }
+    #search{
+      float: right;
+      margin-top: 18px;
+      width: 300px;
+      height: 30px;
+      border-radius: 25px;
+      border: 3px solid lightblue;
+      text-align: center;
+      font-size: 20px;
+    }

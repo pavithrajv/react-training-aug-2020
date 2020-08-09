@@ -1,0 +1,49 @@
+#editbox{
+	width: 370px;
+	height: 480px;
+	background-color: #f1f1f1;
+	margin-top: 40px;
+	margin-left: 36%;
+	padding: 20px;
+}
+#editbox p{
+	font-size: 15px;
+}
+#editbox input{
+	width: 100%;
+}
+#editbox input[type="text"],input[type="number"]{
+	border:none;
+    border-bottom: 1px solid #1c8adb;
+	background: transparent;
+	outline: none;
+	font-size:15px;
+}
+#editbox input[type="submit"]{
+	border:none;
+	outline:none;
+	height: 40px;
+	margin-top: 30px;
+	background:#1c8adb;
+	color: whitesmoke;
+    font-size: 20px;
+    width: 50%;
+}
+#editbox input[type="submit"]:hover
+{
+	cursor:pointer;
+	background:#33CCFF;
+	color:#000;
+}
+#edit{
+    margin-top: 5px;
+    width: 120px;
+    height: 40px;
+    color: whitesmoke;
+    padding: 10px;
+	height: 30px;
+	border: none;
+	border-radius: 10px;
+	background-color: #1c8adb;
+	align-items: center;
+}

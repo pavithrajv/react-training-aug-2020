@@ -1,10 +1,19 @@
 import React from 'react';
 
+import Navbar from '../../navbar/navbar';
+import '../../navbar/navbar.css';
+import ChartComponent from './chart.js';
+
 class DashboardComponent extends React.Component {
     state = {  }
     render() { 
         return ( 
-            <h2>DashboardComponent will render here..!!!</h2>
+            <div>
+                
+            <Navbar></Navbar>   
+            <ChartComponent></ChartComponent>
+            
+            </div>
          );
     }
 }
