@@ -19,13 +19,13 @@
       "inStock": "100"
     },
     {
-      "id": "1",
       "productImage": "mobile.jpg",
-      "productName": "Mobile phone",
+      "productName": "Mobile phoneeeezzzz",
       "category": "Electronics",
-      "rating": "4",
-      "price": "30000",
-      "inStock": "100"
+      "rating": "4.2",
+      "price": "40000",
+      "inStock": "100",
+      "id": "1"
     },
     {
       "id": "2",
@@ -46,12 +46,30 @@
       "inStock": "100"
     },
     {
-      "id": "4",
-      "productImage": "bg1.jpg",
-      "productName": "test",
+      "productImage": "gloves.jpg",
+      "productName": "Glovezz",
+      "category": "Accesories",
+      "rating": "5",
+      "price": "202",
+      "inStock": "100",
+      "id": "15"
+    },
+    {
+      "productImage": "watch.jpg",
+      "productName": "Digital watch",
       "category": "Electronics",
-      "rating": "3",
-      "price": "100",
+      "rating": "4",
+      "price": "200",
+      "inStock": "100",
+      "id": "34"
+    },
+    {
+      "id": "36",
+      "productImage": "cheese.jpg",
+      "productName": "Fresh cheese",
+      "category": "Dairy Products",
+      "rating": "4",
+      "price": "200",
       "inStock": "100"
     }
   ],
@@ -71,14 +89,6 @@
       "userid": "test5",
       "pwd": "test@5",
       "cpwd": "test@5"
-    },
-    {
-      "id": "dfweefw",
-      "name": "dwerew",
-      "email": "fewgew@gmail.com",
-      "userid": "dfweefw",
-      "pwd": "vsvsd",
-      "cpwd": "vsvsd"
     }
   ]
 }

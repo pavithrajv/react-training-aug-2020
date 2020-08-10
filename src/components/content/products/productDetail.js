@@ -3,6 +3,7 @@ import './productDetail.css'
 class ProductDetail extends React.Component {
     constructor(props) {
         super(props);
+        console.log("editid:",this.props.pimage)
         this.state = {}
     }
 

@@ -8,18 +8,20 @@ class editProduct extends React.Component {
         super(props);
         console.log(this.props)
         console.log(this.props.id)
-        console.log(this.props.pimage)
+        
         console.log(this.props.location.state)
         this.state={
             id:0,
-            // image:'',
+            image:'../../../images/bg1.jpg',
             name:'',
             category:'',
             price:0,
             rating:0,
             stock:0
         }
+        
     }
+    
     
     // getPimage=(event)=>{
     //     console.log(event.target.value)
@@ -55,9 +57,10 @@ class editProduct extends React.Component {
             .then(response=>{
                 console.log(response)
                 console.log(response.data.productImage)
+                console.log(this.state.image)
                 this.setState({
                     id:response.data.id,
-                    //  image:response.data.productImage,
+                     image:response.data.productImage,
                     name:response.data.productName,
                     category:response.data.category,
                     rating:response.data.rating,
@@ -73,7 +76,7 @@ class editProduct extends React.Component {
     editProduct=()=>{
         console.log("in edit product..")
         let productDetails = {
-            // "productImage": this.state.image,
+            "productImage": this.state.image,
             "productName":this.state.name,
             "category":this.state.category,
             "rating":this.state.rating,
