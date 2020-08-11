@@ -18,8 +18,8 @@ class addProduct extends React.Component {
             catError:"",
             price: 0,
             priceError:"",
-            rating: 0,
-            ratingError:"",
+            quantity: 0,
+            quantityError:"",
             pstock:0,
             stockError:"",
             buttonStatus:true
@@ -58,11 +58,11 @@ class addProduct extends React.Component {
         else{
             this.setState({priceError:"valid"})
         }
-        if(this.state.rating == ''){
-            this.setState({ratingError:"enter product rating"})
+        if(this.state.quantity == ''){
+            this.setState({quantityError:"enter product quantity"})
         }
         else{
-            this.setState({ratingError:"valid"})
+            this.setState({quantityError:"valid"})
         }
         if(this.state.pstock == ''){
             this.setState({stockError:"Enter updated stock"})
@@ -100,9 +100,9 @@ class addProduct extends React.Component {
         this.setState({price:event.target.value})
     }
 
-    getRating=(event)=>{
+    getQuantity=(event)=>{
         console.log(event.target.value)
-        this.setState({rating:event.target.value})
+        this.setState({quantity:event.target.value})
     }
     
     getPStock=(event)=>{
@@ -113,13 +113,13 @@ class addProduct extends React.Component {
     addProduct = () => {
         console.log("add product rendered..")
         this.checkValidation()
-        if(this.state.idError == "valid" && this.state.imageError== "valid"  && this.state.nameError == "valid" &&this.state.catError == "valid" && this.state.priceError =="valid" && this.state.ratingError =="valid" && this.state.stockError =="valid"){
+        if(this.state.idError == "valid" && this.state.imageError== "valid"  && this.state.nameError == "valid" &&this.state.catError == "valid" && this.state.priceError =="valid" && this.state.quantityError =="valid" && this.state.stockError =="valid"){
         let productDetails = {
             "id" :this.state.id,
             "productImage": this.state.pimage,
             "productName": this.state.pname,
             "category": this.state.pcat,
-            "rating": this.state.rating,
+            "quantity": this.state.quantity,
             "price": this.state.price,
             "inStock": this.state.pstock
         }
@@ -164,8 +164,8 @@ class addProduct extends React.Component {
                     <p>Price</p>
                     <input type="number" id="price" placeholder="enter Price" onChange={this.getPrice}></input><span style={{ color: "red" }}>{this.state.priceError}</span>
                     <br></br>
-                    <p>Rating</p>
-                    <input type="number" id="rating" placeholder="enter rating" onChange={this.getRating}></input><span style={{ color: "red" }}>{this.state.ratingError}</span>
+                    <p>Quantity</p>
+                    <input type="number" id="quantity" placeholder="enter quantity" onChange={this.getQuantity}></input><span style={{ color: "red" }}>{this.state.quantityError}</span>
                     <br></br>
                     <p>InStock</p>
                     <input type="number" id="pstock" onChange={this.getPStock}></input><span style={{ color: "red" }}>{this.state.stockError}</span>

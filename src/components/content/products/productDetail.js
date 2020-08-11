@@ -34,7 +34,7 @@ class ProductDetail extends React.Component {
     // //             //     <td>{this.props.name}</td>
     // //             //     <td>{this.props.category}</td>
     // //             //     <td>{this.props.price}</td>
-    // //             //     <td>{this.props.rating}</td>
+    // //             //     <td>{this.props.quantity}</td>
     // //             //     <td>{this.props.inStock}</td>
     // //             //     <td>
     // //             //         <button style={{backgroundColor:" #61dafb",borderRadius:"10px",border:"none",padding:"5px"}} onClick={this.editProduct}>Edit</button>
@@ -62,7 +62,7 @@ class ProductDetail extends React.Component {
                 <td>{this.props.name} </td>
                 <td>{this.props.category}</td>
                 <td>{this.props.price}</td>
-                <td>{this.props.rating}</td>
+                <td>{this.props.quantity}</td>
                 <td>{this.props.inStock}</td>
                 <td>
                     <button id="editpro" onClick={this.editProduct}>Edit</button>

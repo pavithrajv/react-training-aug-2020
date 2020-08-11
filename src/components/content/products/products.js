@@ -43,7 +43,7 @@ class ProductComponent extends React.Component {
                     name={product.productName}
                     category={product.category}
                     price={product.price}
-                    rating={product.rating}
+                    quantity={product.quantity}
                     inStock={product.inStock}
                     deleteId={this.deleteProductFromAxios}
                     editId={this.editProductFromAxios}
@@ -121,7 +121,7 @@ class ProductComponent extends React.Component {
                             <th>PRoductName</th>
                             <th>Category</th>
                             <th>Price</th>
-                            <th>Rating</th>
+                            <th>Quantity</th>
                             <th>InStock</th>
                             <th colSpan="2">Action</th>
                         </tr>

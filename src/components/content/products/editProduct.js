@@ -16,7 +16,7 @@ class editProduct extends React.Component {
             name:'',
             category:'',
             price:0,
-            rating:0,
+            quantity:0,
             stock:0
         }
         
@@ -42,9 +42,9 @@ class editProduct extends React.Component {
         console.log(event.target.value)
         this.setState({price:event.target.value})
     }
-    getRating=(event)=>{
+    getQuantity=(event)=>{
         console.log(event.target.value)
-        this.setState({rating:event.target.value})
+        this.setState({quantity:event.target.value})
     }
     getPStock=(event)=>{
         console.log(event.target.value)
@@ -63,7 +63,7 @@ class editProduct extends React.Component {
                      image:response.data.productImage,
                     name:response.data.productName,
                     category:response.data.category,
-                    rating:response.data.rating,
+                    quantity:response.data.quantity,
                     price:response.data.price,
                     stock:response.data.inStock    
                 })
@@ -79,7 +79,7 @@ class editProduct extends React.Component {
             "productImage": this.state.image,
             "productName":this.state.name,
             "category":this.state.category,
-            "rating":this.state.rating,
+            "quantity":this.state.quantity,
             "price":this.state.price,
             "inStock":this.state.stock
         }
@@ -124,8 +124,8 @@ class editProduct extends React.Component {
                     </select><br></br>
                     <p>Price</p>
                     <input type="number" id="price" value={this.state.price} onChange={this.getPrice}></input><br></br>
-                    <p>Rating</p>
-                    <input type="number" id="rating" value={this.state.rating} onChange={this.getRating}></input><br></br>
+                    <p>Quantity</p>
+                    <input type="number" id="quantity" value={this.state.quantity} onChange={this.getQuantity}></input><br></br>
                     <p>InStock</p>
                     <input type="number" id="stock" value={this.state.stock} onChange={this.getPStock}></input><br></br>
                     <button id="edit" onClick={this.editProduct}>Update Product</button>

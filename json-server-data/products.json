@@ -5,7 +5,7 @@
       "productImage": "mask.jpeg",
       "productName": "Mask",
       "category": "Accesories",
-      "rating": "3",
+      "quantity": "3",
       "price": "1000",
       "inStock": "100"
     },
@@ -14,7 +14,7 @@
       "productImage": "cheese.jpg",
       "productName": "Butter",
       "category": "Dairy Products",
-      "rating": "4",
+      "quantity": "4",
       "price": "300",
       "inStock": "100"
     },
@@ -22,7 +22,7 @@
       "productImage": "mobile.jpg",
       "productName": "Mobile phoneeeezzzz",
       "category": "Electronics",
-      "rating": "4.2",
+      "quantity": "4.2",
       "price": "40000",
       "inStock": "100",
       "id": "1"
@@ -32,7 +32,7 @@
       "productImage": "headset.jpg",
       "productName": "Headset",
       "category": "Electronics",
-      "rating": "4",
+      "quantity": "4",
       "price": "2000",
       "inStock": "100"
     },
@@ -41,7 +41,7 @@
       "productImage": "panner.jpeg",
       "productName": "Pannerr",
       "category": "Dairy Products",
-      "rating": "3",
+      "quantity": "3",
       "price": "300",
       "inStock": "100"
     },
@@ -49,7 +49,7 @@
       "productImage": "gloves.jpg",
       "productName": "Glovezz",
       "category": "Accesories",
-      "rating": "5",
+      "quantity": "5",
       "price": "202",
       "inStock": "100",
       "id": "15"
@@ -58,7 +58,7 @@
       "productImage": "watch.jpg",
       "productName": "Digital watch",
       "category": "Electronics",
-      "rating": "4",
+      "quantity": "4",
       "price": "200",
       "inStock": "100",
       "id": "34"
@@ -68,7 +68,7 @@
       "productImage": "cheese.jpg",
       "productName": "Fresh cheese",
       "category": "Dairy Products",
-      "rating": "4",
+      "quantity": "4",
       "price": "200",
       "inStock": "100"
     },
@@ -76,7 +76,7 @@
       "productImage": "watch.webp",
       "productName": "ewfef",
       "category": "Electronics",
-      "rating": "4",
+      "quantity": "4",
       "price": "4545",
       "inStock": "424",
       "id": "23"
@@ -86,27 +86,27 @@
       "productImage": "headset.jpg",
       "productName": "Headset",
       "category": "Electronics",
-      "rating": "3",
+      "quantity": "3",
       "price": "1123",
       "inStock": "232"
-    },
-    {
-      "id": "54",
-      "productImage": "laptop.jpg",
-      "productName": "",
-      "category": "",
-      "rating": 0,
-      "price": 0,
-      "inStock": 0
     },
     {
       "id": "39",
       "productImage": "bg1.jpg",
       "productName": "dtry",
       "category": "Electronics",
-      "rating": "2",
+      "quantity": "2",
       "price": "210",
       "inStock": "100"
+    },
+    {
+      "productImage": "panner.jpeg",
+      "productName": "pannerzzzz",
+      "category": "Dairy Products",
+      "quantity": "29",
+      "price": "200",
+      "inStock": "100",
+      "id": "29"
     }
   ],
   "allusers": [
@@ -141,6 +141,38 @@
       "userid": "test",
       "pwd": "test",
       "cpwd": "test"
+    },
+    {
+      "id": "feffew",
+      "name": "fgfd",
+      "email": "reg@gmail.com",
+      "userid": "feffew",
+      "pwd": "greg",
+      "cpwd": "greg"
+    },
+    {
+      "id": "frftg",
+      "name": "gt5gy",
+      "email": "rtgwg@gmail.com",
+      "userid": "frftg",
+      "pwd": "gregreh",
+      "cpwd": "hrthjrt"
+    },
+    {
+      "id": "degreg",
+      "name": "g5rgg",
+      "email": "rfeg@gmail.com",
+      "userid": "degreg",
+      "pwd": "tgehtrg",
+      "cpwd": "etbbt"
+    },
+    {
+      "id": "gwgwrh",
+      "name": "grggs",
+      "email": "fghjgfjgff@gmail.com",
+      "userid": "gwgwrh",
+      "pwd": "fewgewg",
+      "cpwd": "gegrhh"
     }
   ]
 }
