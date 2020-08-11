@@ -13,7 +13,7 @@ class ChartComponent extends React.Component {
                 <div style={{ display: 'flex', maxWidth: 900 }}>
 
                     <Chart
-                        width={'500px'}
+                        width={'400px'}
                         height={'300px'}
                         chartType="PieChart"
                         loader={<div>Loading Chart</div>}
@@ -30,11 +30,37 @@ class ChartComponent extends React.Component {
                         }}
                         rootProps={{ 'data-testid': '1' }}
                     />
-                </div>
-                <div style={{ display: 'flex' }}>
-
                     <Chart
-                        width={'300px'}
+                        width={'400px'}
+                        height={'300px'}
+                        chartType="LineChart"
+                        loader={<div>Loading Chart</div>}
+                        data={[
+                            ['x', 'panner', 'cheese'],
+                            [0, 0, 0],
+                            [1, 10, 5],
+                            [2, 23, 15],
+                            [3, 17, 9],
+                            [4, 18, 10],
+                            [5, 9, 5],
+                            [6, 11, 3],
+                            [7, 27, 19],
+                        ]}
+                        options={{
+                            hAxis: {
+                                title: 'product',
+                            },
+                            vAxis: {
+                                title: 'stock',
+                            },
+                            series: {
+                                1: { curveType: 'function' },
+                            },
+                        }}
+                        rootProps={{ 'data-testid': '2' }}
+                    />
+                    <Chart
+                        width={'400px'}
                         height={'300px'}
                         chartType="PieChart"
                         loader={<div>Loading Chart</div>}
@@ -53,6 +79,10 @@ class ChartComponent extends React.Component {
                     />
                 </div>
             </div>
+               
+                
+
+                    
         );
     }
 }

@@ -71,6 +71,42 @@
       "rating": "4",
       "price": "200",
       "inStock": "100"
+    },
+    {
+      "productImage": "watch.webp",
+      "productName": "ewfef",
+      "category": "Electronics",
+      "rating": "4",
+      "price": "4545",
+      "inStock": "424",
+      "id": "23"
+    },
+    {
+      "id": "65",
+      "productImage": "headset.jpg",
+      "productName": "Headset",
+      "category": "Electronics",
+      "rating": "3",
+      "price": "1123",
+      "inStock": "232"
+    },
+    {
+      "id": "54",
+      "productImage": "laptop.jpg",
+      "productName": "",
+      "category": "",
+      "rating": 0,
+      "price": 0,
+      "inStock": 0
+    },
+    {
+      "id": "39",
+      "productImage": "bg1.jpg",
+      "productName": "dtry",
+      "category": "Electronics",
+      "rating": "2",
+      "price": "210",
+      "inStock": "100"
     }
   ],
   "allusers": [
@@ -83,12 +119,28 @@
       "cpwd": "test"
     },
     {
-      "id": "test5",
-      "name": "test5",
-      "email": "test5@gmail.com",
-      "userid": "test5",
-      "pwd": "test@5",
-      "cpwd": "test@5"
+      "id": "gegdfhr",
+      "name": "fefger",
+      "email": "sddsa@gmail.com",
+      "userid": "gegdfhr",
+      "pwd": "ewgw",
+      "cpwd": "ewgw"
+    },
+    {
+      "id": "pavithra",
+      "name": "pavi",
+      "email": "pavithra@gmail.com",
+      "userid": "pavithra",
+      "pwd": "pavi123",
+      "cpwd": "pavi123"
+    },
+    {
+      "id": "test",
+      "name": "test",
+      "email": "test@gmail.com",
+      "userid": "test",
+      "pwd": "test",
+      "cpwd": "test"
     }
   ]
 }

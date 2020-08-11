@@ -9,87 +9,94 @@ class RegisterComponent extends React.Component {
         name: '',
         email: '',
         uid: '',
-        pwd: '',
-        cpwd: '',
+        pwd: "",
+        cpwd: "",
         nameError: '',
         emailError: '',
         useridError: '',
-        pwdError: 'default',
+        pwdError: '',
         cpwdError: '',
-        buttonStatus: true
+        buttonStatus:false
+        
 
     }
+
 
     getName = (event) => {
         console.log(event)
         console.log(event.target)
         console.log(event.target.value)
         this.setState({ name: event.target.value })
-        this.checkValidation()
+        //this.checkValidation()
 
     }
 
     getEmail = (event) => {
         this.setState({ email: event.target.value })
-        this.checkValidation()
+        //this.checkValidation()
     }
 
     getUserId = (event) => {
         this.setState({ uid: event.target.value })
-        this.checkValidation()
+        //this.checkValidation()
     }
     getPwd = (event) => {
         console.log(event.target.value)
         this.setState({ pwd: event.target.value })
-        this.checkValidation()
+        //this.checkValidation()
     }
 
     getCpwd = (event) => {
         console.log(event.target.value)
         this.setState({ cpwd: event.target.value })
-        this.checkValidation()
+        //this.checkValidation()
     }
 
     checkValidation = () => {
 
         if (this.state.name == "" || this.state.name.length < 4) {
-            this.setState({ nameError: "please enter valid name", buttonStatus: true })
+            this.setState({ nameError: "please enter valid name"})
         }
         else {
             this.setState({ nameError: 'valid', buttonStatus: false })
         }
         if (this.state.email == "" || !this.state.email.match('@gmail.com')) {
-            this.setState({ emailError: 'please enter valid email', buttonStatus: true })
+            this.setState({ emailError: 'please enter valid email'})
         }
         else {
-            this.setState({ emailError: 'valid', buttonStatus: false })
+            this.setState({ emailError: 'valid' })
         }
         if (this.state.uid == "" || this.state.uid.length < 4) {
-            this.setState({ useridError: 'please enter valid userid', buttonStatus: true })
+            this.setState({ useridError: 'please enter valid userid' })
         }
         else {
-            this.setState({ useridError: 'valid', buttonStatus: false })
+            this.setState({ useridError: 'valid'})
         }
         if (this.state.pwd == '' || this.state.pwd.length <= 4) {
-            this.setState({ pwdError: "please enter valid password", buttonStatus: true })
+            this.setState({ pwdError: "please enter valid password" })
         }
         if (this.state.pwd.includes(',') || this.state.pwd.includes('.')) {
-            this.setState({ pwdError: "password should not include , or .", buttonStatus: true })
+            this.setState({ pwdError: "password should not include , or ." })
         }
         else {
-            this.setState({ pwdError: 'valid', buttonStatus: false })
+            this.setState({ pwdError: 'valid'})
         }
 
-        // console.log("pwd:", this.state.pwd)
-        // console.log("cpwd:", this.state.cpwd)
-        // if (this.state.pwd != this.state.cpwd) {
-        //     this.setState({ cpwdError: 'passwords are not same' })
-        // }
+        console.log("pwd:", this.state.pwd)
+        console.log("cpwd:", this.state.cpwd)
+        if (this.state.cpwd == '' ||this.state.pwd != this.state.cpwd) {
+            this.setState({ cpwdError: 'Enter the same password again' })
+        }
+        else{
+            this.setState({cpwdError:"valid"})
+        }
+        
+        
     }
 
     saveUser = () => {
         console.log("save user rendered..")
-
+        this.checkValidation()
         let userDetails = {
             "id": this.state.uid,
             "name": this.state.name,
@@ -98,6 +105,8 @@ class RegisterComponent extends React.Component {
             "pwd": this.state.pwd,
             "cpwd": this.state.cpwd
         }
+        if(this.state.nameError == "valid" && this.state.emailError =="valid" && this.state.useridError =="valid" && this.state.pwdError == "valid" && this.state.cpwdError == "valid"){
+        
         console.log("userDetails:", userDetails)
         this.checkValidation()
         console.log(this.state.pwdError)
@@ -109,6 +118,7 @@ class RegisterComponent extends React.Component {
                 }).catch(error => {
                     console.log(error)
                 })
+        }    
         //}
         // else {
         //     console.log("invalid data..")
@@ -133,9 +143,9 @@ class RegisterComponent extends React.Component {
                     <input type="password" id="pwd" onChange={this.getPwd} required></input><span style={{ color: "red" }}>{this.state.pwdError}</span>
                     <br></br>
                     <p>Confirm Password</p>
-                    <input type="password" id="cpwd" onChange={this.getCpwd} required></input>
+                    <input type="password" id="cpwd" onChange={this.getCpwd} required></input><span style={{ color: "red" }}>{this.state.cpwdError}</span>
                     <br></br><br></br>
-                    <button id="save" onClick={this.saveUser} disabled={this.state.buttonStatus}>Save User</button>
+                    <button id="save" onClick={this.saveUser} >Save User</button>
                     <br></br><br></br>
                     <Link to='/login' id="reg">Already a member,login here..</Link>
                 </form>
