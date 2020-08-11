@@ -23,10 +23,11 @@ class editProduct extends React.Component {
     }
     
     
-    // getPimage=(event)=>{
-    //     console.log(event.target.value)
-    //     this.setState({image:event.target.value})
-    // }
+    getPimage=(event)=>{
+        console.log(event.target.value)
+        this.setState({image:event.target.value})
+        this.setState({image:event.target.value.substr(12)})
+    }
     
     getPname=(event)=>{
         console.log(event)
@@ -111,8 +112,8 @@ class editProduct extends React.Component {
                 <form>
                 <p>ID</p>
                     <input type="number" value={this.state.id} readOnly></input><br></br>
-                    {/* <p>ProductImage</p>
-                    <input type="file" id="image" value={this.state.image} onChange={this.getPimage} multiple accept='image/*'></input><br></br> */}
+                    <p>ProductImage</p>
+                    <input type="file" id="image" onChange={this.getPimage} readOnly multiple accept='image/*'></input><br></br>
                     <p>ProductName</p>
                     <input type="text" id="name" value={this.state.name} onChange={this.getPname}></input><br></br>
                     <p>Category</p>

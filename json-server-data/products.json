@@ -1,112 +1,49 @@
 {
   "allproducts": [
     {
-      "id": "35",
-      "productImage": "mask.jpeg",
-      "productName": "Mask",
-      "category": "Accesories",
-      "quantity": "3",
-      "price": "1000",
-      "inStock": "100"
-    },
-    {
-      "id": "40",
-      "productImage": "cheese.jpg",
-      "productName": "Butter",
-      "category": "Dairy Products",
-      "quantity": "4",
-      "price": "300",
-      "inStock": "100"
-    },
-    {
       "productImage": "mobile.jpg",
       "productName": "Mobile phoneeeezzzz",
       "category": "Electronics",
-      "quantity": "4.2",
-      "price": "40000",
+      "quantity": "40",
+      "price": "15000",
       "inStock": "100",
       "id": "1"
     },
     {
       "id": "2",
-      "productImage": "headset.jpg",
-      "productName": "Headset",
-      "category": "Electronics",
-      "quantity": "4",
-      "price": "2000",
-      "inStock": "100"
-    },
-    {
-      "id": "3",
       "productImage": "panner.jpeg",
-      "productName": "Pannerr",
+      "productName": "Fresh panner",
       "category": "Dairy Products",
-      "quantity": "3",
+      "quantity": "5",
       "price": "300",
       "inStock": "100"
     },
     {
-      "productImage": "gloves.jpg",
-      "productName": "Glovezz",
+      "id": "3",
+      "productImage": "mask.jpeg",
+      "productName": "Mask",
       "category": "Accesories",
-      "quantity": "5",
-      "price": "202",
-      "inStock": "100",
-      "id": "15"
+      "quantity": "20",
+      "price": "400",
+      "inStock": "200"
     },
     {
-      "productImage": "watch.jpg",
-      "productName": "Digital watch",
-      "category": "Electronics",
-      "quantity": "4",
-      "price": "200",
-      "inStock": "100",
-      "id": "34"
+      "id": "4",
+      "productImage": "book.jpg",
+      "productName": "Harry porter",
+      "category": "Books",
+      "quantity": "25",
+      "price": "500",
+      "inStock": "50"
     },
     {
-      "id": "36",
-      "productImage": "cheese.jpg",
-      "productName": "Fresh cheese",
-      "category": "Dairy Products",
-      "quantity": "4",
-      "price": "200",
-      "inStock": "100"
-    },
-    {
-      "productImage": "watch.webp",
-      "productName": "ewfef",
-      "category": "Electronics",
-      "quantity": "4",
-      "price": "4545",
-      "inStock": "424",
-      "id": "23"
-    },
-    {
-      "id": "65",
+      "id": "5",
       "productImage": "headset.jpg",
       "productName": "Headset",
       "category": "Electronics",
-      "quantity": "3",
-      "price": "1123",
-      "inStock": "232"
-    },
-    {
-      "id": "39",
-      "productImage": "bg1.jpg",
-      "productName": "dtry",
-      "category": "Electronics",
-      "quantity": "2",
-      "price": "210",
-      "inStock": "100"
-    },
-    {
-      "productImage": "panner.jpeg",
-      "productName": "pannerzzzz",
-      "category": "Dairy Products",
-      "quantity": "29",
-      "price": "200",
-      "inStock": "100",
-      "id": "29"
+      "quantity": "10",
+      "price": "800",
+      "inStock": "60"
     }
   ],
   "allusers": [
@@ -117,14 +54,6 @@
       "userid": "test123",
       "pwd": "test",
       "cpwd": "test"
-    },
-    {
-      "id": "gegdfhr",
-      "name": "fefger",
-      "email": "sddsa@gmail.com",
-      "userid": "gegdfhr",
-      "pwd": "ewgw",
-      "cpwd": "ewgw"
     },
     {
       "id": "pavithra",
@@ -141,38 +70,6 @@
       "userid": "test",
       "pwd": "test",
       "cpwd": "test"
-    },
-    {
-      "id": "feffew",
-      "name": "fgfd",
-      "email": "reg@gmail.com",
-      "userid": "feffew",
-      "pwd": "greg",
-      "cpwd": "greg"
-    },
-    {
-      "id": "frftg",
-      "name": "gt5gy",
-      "email": "rtgwg@gmail.com",
-      "userid": "frftg",
-      "pwd": "gregreh",
-      "cpwd": "hrthjrt"
-    },
-    {
-      "id": "degreg",
-      "name": "g5rgg",
-      "email": "rfeg@gmail.com",
-      "userid": "degreg",
-      "pwd": "tgehtrg",
-      "cpwd": "etbbt"
-    },
-    {
-      "id": "gwgwrh",
-      "name": "grggs",
-      "email": "fghjgfjgff@gmail.com",
-      "userid": "gwgwrh",
-      "pwd": "fewgewg",
-      "cpwd": "gegrhh"
     }
   ]
 }
