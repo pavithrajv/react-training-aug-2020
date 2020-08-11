@@ -13,12 +13,12 @@ class ChartComponent extends React.Component {
                 <div style={{ display: 'flex', maxWidth: 900 }}>
 
                     <Chart
-                        width={'400px'}
-                        height={'300px'}
+                        width={'500px'}
+                        height={'400px'}
                         chartType="PieChart"
                         loader={<div>Loading Chart</div>}
                         data={[
-                            ['category', 'Instock'],
+                            ['category', 'quantity'],
                             ['Dairy products', 11],
                             ['Electronics', 2],
                             ['Accesories', 2],
@@ -31,27 +31,27 @@ class ChartComponent extends React.Component {
                         rootProps={{ 'data-testid': '1' }}
                     />
                     <Chart
-                        width={'400px'}
-                        height={'300px'}
+                        width={'500px'}
+                        height={'400px'}
                         chartType="LineChart"
                         loader={<div>Loading Chart</div>}
                         data={[
                             ['x', 'panner', 'cheese'],
                             [0, 0, 0],
-                            [1, 10, 5],
+                            
                             [2, 23, 15],
-                            [3, 17, 9],
+                            
                             [4, 18, 10],
-                            [5, 9, 5],
+                            
                             [6, 11, 3],
-                            [7, 27, 19],
+                            
                         ]}
                         options={{
                             hAxis: {
                                 title: 'product',
                             },
                             vAxis: {
-                                title: 'stock',
+                                title: 'quantity',
                             },
                             series: {
                                 1: { curveType: 'function' },
