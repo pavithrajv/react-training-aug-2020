@@ -59,24 +59,7 @@ class ChartComponent extends React.Component {
                         }}
                         rootProps={{ 'data-testid': '2' }}
                     />
-                    <Chart
-                        width={'400px'}
-                        height={'300px'}
-                        chartType="PieChart"
-                        loader={<div>Loading Chart</div>}
-                        data={[
-                            ['Product', 'InStock'],
-                            ['Cheese', 11],
-                            ['Butter', 5],
-                            ['Panner', 2]
-                        ]}
-                        options={{
-                            title: 'Stock of dairy products',
-                            // Just add this option
-                            //pieHole: 0.4,
-                        }}
-                        rootProps={{ 'data-testid': '3' }}
-                    />
+                    
                 </div>
             </div>
                
