@@ -84,8 +84,11 @@ class RegisterComponent extends React.Component {
         else {
             this.setState({ pwdError: '', buttonStatus: false })
         }
-        if (this.state.cpwd == '' || this.state.pwd != this.state.cpwd) {
-            this.setState({ cpwdError: 'Enter the same password again' })
+        if (this.state.cpwd == '' || this.state.cpwd != this.state.pwd) {
+            this.setState({ cpwdError: 'Enter the same password again',buttonStatus:true })
+        }
+        else if(this.state.cpwdError == "Enter the same password again"){
+            this.setState({buttonStatus:true})
         }
         else {
             this.setState({ cpwdError: '', buttonStatus: false })
@@ -118,6 +121,7 @@ class RegisterComponent extends React.Component {
                 console.log(this.props.history.push('/login'))
             }).catch(error => {
                 console.log(error)
+                alert("username already exixts")
             })
 
     }
@@ -141,7 +145,7 @@ class RegisterComponent extends React.Component {
                     <input type="password" id="pwd" onChange={this.getPwd} required></input><span >{this.state.pwdError}</span>
                     <br></br>
                     <p>Confirm Password</p>
-                    <input type="password" id="cpwd" onChange={this.getCpwd} required></input>
+                    <input type="password" id="cpwd" onChange={this.getCpwd} required></input><span >{this.state.cpwdError}</span>
                     <br></br><br></br>
                     <button id="save" onClick={this.saveUser} disabled={this.state.buttonStatus} style={{ backgroundcolor: 'white', color: ' black', border: '2px solid #008CBA' }}>SignUp</button>
                     <br></br><br></br>

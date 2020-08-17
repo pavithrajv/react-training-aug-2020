@@ -22,6 +22,7 @@ class ContentComponent extends React.Component {
                 <Route path='/' exact component={LoginComponent}></Route>
                 <Route path='/editproduct' component={editProduct}></Route>
                 
+                
                 </Switch>
             </div>
          );

@@ -1,49 +1,94 @@
 {
   "allproducts": [
     {
-      "productImage": "mobile.jpg",
-      "productName": "Mobile phoneeeezzzz",
-      "category": "Electronics",
-      "quantity": "40",
-      "price": "15000",
-      "inStock": "100",
-      "id": "1"
-    },
-    {
-      "id": "2",
-      "productImage": "panner.jpeg",
-      "productName": "Fresh panner",
-      "category": "Dairy Products",
-      "quantity": "5",
-      "price": "300",
-      "inStock": "100"
-    },
-    {
-      "id": "3",
-      "productImage": "mask.jpeg",
-      "productName": "Mask",
-      "category": "Accesories",
-      "quantity": "20",
-      "price": "400",
-      "inStock": "200"
-    },
-    {
-      "id": "4",
-      "productImage": "book.jpg",
-      "productName": "Harry porter",
-      "category": "Books",
+      "productCode": "REAL45",
+      "productName": "Realme Mobile XT",
+      "vendor": "Vision star",
+      "category": "Mobile",
+      "Manufacturer": "REALME",
       "quantity": "25",
-      "price": "500",
-      "inStock": "50"
+      "price": "10999",
+      "id": 2
     },
     {
-      "id": "5",
-      "productImage": "headset.jpg",
-      "productName": "Headset",
-      "category": "Electronics",
-      "quantity": "10",
-      "price": "800",
-      "inStock": "60"
+      "productCode": "CAN365",
+      "productName": "Canon Waterproof Camera",
+      "vendor": "Supercomet",
+      "category": "Camera",
+      "Manufacturer": "CANON",
+      "quantity": "20",
+      "price": "500",
+      "id": 3
+    },
+    {
+      "productCode": "DELP65",
+      "productName": "Dell Touchscreen Laptop",
+      "category": "Laptop",
+      "vendor": "Kanha Trading",
+      "Manufacturer": "DELL",
+      "quantity": "20",
+      "price": "30000",
+      "id": 4
+    },
+    {
+      "productCode": "BOAT321",
+      "productName": "Boat Basshead Headphones",
+      "category": "Headphones",
+      "vendor": "vision star",
+      "Manufacturer": "BOAT",
+      "quantity": "43",
+      "price": "500",
+      "id": 5
+    },
+    {
+      "productCode": "JBL534",
+      "productName": "JBL Bluetooth Speaker",
+      "vendor": "Corseca",
+      "category": "Speaker",
+      "Manufacturer": "JBL",
+      "quantity": "28",
+      "price": "2159",
+      "id": 6
+    },
+    {
+      "productCode": "APP841",
+      "productName": "Apple Digital Watch",
+      "vendor": "Sargam  pvt Ltd",
+      "category": "Accesories",
+      "Manufacturer": "APPLE",
+      "quantity": "24",
+      "price": "1549",
+      "id": 7
+    },
+    {
+      "productCode": "SAM456",
+      "productName": "Samsung Galaxy M40",
+      "vendor": "vision star",
+      "category": "Mobile",
+      "Manufacturer": "SAMSUNG",
+      "quantity": "20",
+      "price": "14521",
+      "id": 8
+    },
+    {
+      "productCode": "MIWL45",
+      "productName": "MI True Wireless Earphones",
+      "vendor": "vision star",
+      "category": "Headphones",
+      "Manufacturer": "MI",
+      "quantity": "30",
+      "price": "639",
+      "id": 9
+    },
+    {
+      "productCode": "LEN025",
+      "productName": "HP Elitebook Folio Laptop",
+      "vendor": "Sargam pvt ltd",
+      "category": "Laptop",
+      "Manufacturer": "HP",
+      "quantity": "20",
+      "price": "23199",
+      "id": 10
     }
   ],
   "allusers": [
@@ -70,6 +115,14 @@
       "userid": "test",
       "pwd": "test",
       "cpwd": "test"
+    },
+    {
+      "id": "dsgvwgw",
+      "name": "fshshsf",
+      "email": "rehrgew@gmail.com",
+      "userid": "dsgvwgw",
+      "pwd": "",
+      "cpwd": ""
     }
   ]
 }

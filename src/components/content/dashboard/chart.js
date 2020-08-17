@@ -42,7 +42,7 @@ class ChartComponent extends React.Component {
                     console.log(quantity)
                     let count = 0;
                     quantity.map(data => {
-                        count = parseInt(data.inStock) + count;
+                        count = parseInt(data.quantity) + count;
                         console.log(count)
                     })
                     this.state.barChartData.push([datamap, parseInt(count)]);
@@ -78,7 +78,7 @@ class ChartComponent extends React.Component {
                     console.log(pnquantity)
                     let count = 0;
                     pnquantity.map(data => {
-                        count = parseInt(data.inStock) + count;
+                        count = parseInt(data.quantity) + count;
                         console.log(count)
                     },0);
                     this.state.barChartData2.push([datamap, parseInt(count)]);

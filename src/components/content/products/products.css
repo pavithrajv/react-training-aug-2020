@@ -1,13 +1,13 @@
 #customers {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 90%;
+    width: 75%;
     margin-left: 8%;
     margin-top: 6%;
+    border: transparent;
   }
-  #customers td,
-    #customers th {
-      border: 1px solid #ddd;
+  #customers td
+    {
       padding: 8px;
       text-align: center;
     }
@@ -23,28 +23,35 @@
     #customers th {
       padding: 12px;
       text-align: center;
-      background-color: darkblue;
+      background-color:black;
       color: white;
     }
     #addpro{
     width: 180px;
     height: 40px;
-    color: white;
+    
     border: none;
     border-radius: 25px;
-    background-color: darkblue;
-    float: right;
-    margin-right: -650px;
-    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid grey;
+    
+    /* margin-right: -650px; */
+    
     font-size: 20px;
     }
     #search{
-      float: right;
-      margin-top: 18px;
-      width: 300px;
+      float: left;
+      
+      width: 250px;
       height: 30px;
-      border-radius: 25px;
-      border: 3px solid lightblue;
+      border-radius: 15px;
+      border: 1px solid grey;
       text-align: center;
       font-size: 20px;
     }
+    li{
+      float: left;
+      list-style: none;
+      font-size: 13px;
+      padding-left: 100px;
+  }

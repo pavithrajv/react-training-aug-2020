@@ -6,13 +6,15 @@ class Navbar extends React.Component {
     render() { 
         return ( 
             <div id="nav">
-                <p id="welcome">Welcome,Pavithra!!</p>
-            <Link to="/products" id="pro">
+                <ul>
+                {/* <p id="welcome">Welcome,Pavithra!!</p> */}
+            <li><Link to="/products" style={{textDecoration:"none", marginTop:"-20px"}}>
                 <h2>Products</h2>
-            </Link>
-            <Link to="/dashboard" id="dash">
+            </Link></li>
+            <li><Link to="/dashboard" style={{textDecoration:"none"}}>
                 <h2>Dashboard</h2>
-            </Link>
+            </Link></li>
+            </ul>
             
             </div>
          );

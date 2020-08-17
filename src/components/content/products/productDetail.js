@@ -3,6 +3,7 @@ import './productDetail.css'
 class ProductDetail extends React.Component {
     constructor(props) {
         super(props);
+        console.log(this.props.id)
         console.log("editid:",this.props.pimage)
         this.state = {}
     }
@@ -55,15 +56,17 @@ class ProductDetail extends React.Component {
         return (
             <tr>
 
-                <td>{this.props.id} </td>
-                <td>
+                <td>{this.props.code} </td>
+                {/* <td>
                     <img src={"images/" + this.props.pimage} alt="sorry,no img" style={imgStyle}></img>
-                </td>
+                </td> */}
                 <td>{this.props.name} </td>
+                <td>{this.props.vendor}</td>
                 <td>{this.props.category}</td>
+                <td>{this.props.manufacturer}</td>
                 <td>{this.props.price}</td>
                 <td>{this.props.quantity}</td>
-                <td>{this.props.inStock}</td>
+                {/* <td>{this.props.inStock}</td> */}
                 <td>
                     <button id="editpro" onClick={this.editProduct}>Edit</button>
                 </td>

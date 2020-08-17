@@ -11,6 +11,7 @@ class ProductComponent extends React.Component {
         super(props);
         this.state = {
             products: [],
+            newProducts:[],
             currentid: 0
            
 
@@ -39,12 +40,15 @@ class ProductComponent extends React.Component {
                 <ProductDetail
                     key={product.id}
                     id={product.id}
-                    pimage={product.productImage}
+                    code={product.productCode}
+                    // pimage={product.productImage}
                     name={product.productName}
+                    vendor={product.vendor}
                     category={product.category}
+                    manufacturer={product.Manufacturer}
                     price={product.price}
                     quantity={product.quantity}
-                    inStock={product.inStock}
+                    // inStock={product.inStock}
                     deleteId={this.deleteProductFromAxios}
                     editId={this.editProductFromAxios}
                 >
@@ -90,7 +94,7 @@ class ProductComponent extends React.Component {
         console.log(this.state.products)
         if (event.target.value !== '') {
             console.log(event.target.value)
-
+            
             let filteredList = this.state.products.filter((product) => {
                 return product.productName.toLowerCase().includes(event.target.value.toLowerCase());
 
@@ -106,24 +110,47 @@ class ProductComponent extends React.Component {
 
     }
 
+    searchCategories=(event) =>{
+        if (event.target.value !== '') {
+            console.log(event.target.value)
+
+            let filteredList = this.state.products.filter((product) => {
+                return product.category.toLowerCase().includes(event.target.value.toLowerCase());
+
+            })
+            console.log("filteredList", filteredList);
+            this.setState({ products: filteredList });
+            console.log(this.state.products)
+
+        }
+        else {
+            this.getAllProducts()
+        }
+    }
 
     render() {
         return (
             <div>
                 <Navbar></Navbar>
-                <input type="text" name="search" id="search" onChange={this.searchProducts} placeholder="Search for a product"></input>
-                <button id="addpro" onClick={this.addProduct}>Add product</button>
+                <ul>
+               <li> <input type="search" name="search" id="search" onChange={this.searchProducts} placeholder="Search for a product"></input></li>
+               <li> <input type="text" name="search" id="search" onChange={this.searchCategories} placeholder="Search by category"></input></li>
+                <li><button id="addpro" onClick={this.addProduct}>Add product</button></li></ul>
+                <div>
                 <table border="none" id="customers">
                     <thead>
                         <tr>
-                            <th>Id</th>
-                            <th>ProductImage</th>
-                            <th>PRoductName</th>
+                            <th>ProductCode</th>
+                            {/* <th>ProductImage</th> */}
+                            <th>ProductName</th>
+                            <th>Vendor</th>
                             <th>Category</th>
+                            <th>Manufacturer</th>
                             <th>Price</th>
-                            <th>Quantity</th>
+                            
                             <th>InStock</th>
                             <th colSpan="2">Action</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
@@ -132,7 +159,7 @@ class ProductComponent extends React.Component {
 
                     </tbody>
                 </table>
-                
+                </div>
             </div>
         );
     }
