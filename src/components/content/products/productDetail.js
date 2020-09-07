@@ -4,7 +4,7 @@ class ProductDetail extends React.Component {
     constructor(props) {
         super(props);
         console.log(this.props.id)
-        console.log("editid:",this.props.pimage)
+        console.log("editid:", this.props.pimage)
         this.state = {}
     }
 
@@ -49,23 +49,26 @@ class ProductDetail extends React.Component {
     // }
     render() {
         let imgStyle = {
-            width: '100px',
-            height:'100px',
-            borderRadius: '10px'
+            width: '50',
+            height: '50',
+            borderRadius: '25px'
         }
         return (
             <tr>
 
+
+                <td>
+                    <img style={{ width: "40", height: "40px", borderRadius: "25px" }} src={this.props.pimage} alt="sorry,no img" ></img>
+                </td>
                 <td>{this.props.code} </td>
-                {/* <td>
-                    <img src={"images/" + this.props.pimage} alt="sorry,no img" style={imgStyle}></img>
-                </td> */}
                 <td>{this.props.name} </td>
                 <td>{this.props.vendor}</td>
                 <td>{this.props.category}</td>
                 <td>{this.props.manufacturer}</td>
+                <td>{this.props.color}</td>
                 <td>{this.props.price}</td>
                 <td>{this.props.quantity}</td>
+                <td>{this.props.rating}</td>
                 {/* <td>{this.props.inStock}</td> */}
                 <td>
                     <button id="editpro" onClick={this.editProduct}>Edit</button>

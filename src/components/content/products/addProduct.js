@@ -10,22 +10,26 @@ class addProduct extends React.Component {
         this.state = {
             code:'',
             codeError:"",
-            // pimage:'',
-            // imageError:"",
+            pimage:'',
+            imageError:"",
             pname: '',
             nameError:"",
             vendor:'',
             vendorError:'',
-            pcat: '',
+            pcat: 'Mobile',
             catError:"",
             manufacturer:'',
             manfError:"",
+            color:"",
+            colorError:'',
             price: 0,
             priceError:"",
             quantity: 0,
             quantityError:"",
             pstock:0,
             stockError:"",
+            rating:0,
+            ratingError:"",
             buttonStatus:true
 
         }
@@ -38,12 +42,12 @@ class addProduct extends React.Component {
         else{
             this.setState({codeError:"valid"})
         }
-        // if(this.state.pimage == ''){
-        //     this.setState({imageError:"insert product image"})
-        // }
-        // else{
-        //     this.setState({imageError:"valid"})
-        // }
+        if(this.state.pimage == ''){
+            this.setState({imageError:"insert product image"})
+        }
+        else{
+            this.setState({imageError:"valid"})
+        }
         if(this.state.pname == ''){
             this.setState({nameError:"enter product name"})
         }
@@ -68,6 +72,12 @@ class addProduct extends React.Component {
         else{
             this.setState({manfError:"valid"})
         }
+        if(this.state.color == ''){
+            this.setState({color:"color is mandatory"})
+        }
+        else{
+            this.setState({colorError:"valid"})
+        }
         if(this.state.price == ''){
             this.setState({priceError:"enter product price"})
         }
@@ -79,6 +89,12 @@ class addProduct extends React.Component {
         }
         else{
             this.setState({quantityError:"valid"})
+        }
+        if(this.state.rating == ''){
+            this.setState({rating:"rating is mandatory"})
+        }
+        else{
+            this.setState({ratingError:"valid"})
         }
         // if(this.state.pstock == ''){
         //     this.setState({stockError:"Enter updated stock"})
@@ -95,11 +111,11 @@ class addProduct extends React.Component {
        
     }
 
-    // getPimage=(event)=>{
-    //     console.log(event.target.value)
-    //     console.log(event.target.value.substr(12))
-    //     this.setState({pimage:event.target.value.substr(12)})
-    // }
+    getPimage=(event)=>{
+        console.log(event.target.value)
+        console.log(event.target.value)
+        this.setState({pimage:event.target.value})
+    }
 
     getPname=(event)=>{
         console.log(event.target.value)
@@ -120,6 +136,10 @@ class addProduct extends React.Component {
         console.log("manufacturer"+event.target.value)
         this.setState({manufacturer:event.target.value})
     }
+    getColor = (event) => {
+        console.log(event.target.value)
+        this.setState({ color: event.target.value })
+    }
 
     getPrice=(event)=>{
         console.log(event.target.value)
@@ -131,6 +151,11 @@ class addProduct extends React.Component {
         this.setState({quantity:event.target.value})
     }
     
+    getRating = (event) => {
+        console.log(event.target.value)
+        this.setState({ rating: event.target.value })
+    }
+
     // getPStock=(event)=>{
     //     console.log(event.target.value)
     //     this.setState({pstock:event.target.value})
@@ -140,17 +165,19 @@ class addProduct extends React.Component {
         console.log("add product rendered..")
         this.checkValidation()
         console.log(this.state.code)
-        if(this.state.codeError == "valid" && this.state.nameError == "valid" && this.state.vendorError =="valid" &&this.state.catError == "valid" && this.state.manfError == "valid" &&this.state.priceError =="valid" && this.state.quantityError =="valid" ){
-            console.log("innnnnn")
+        if(this.state.codeError == "valid" && this.state.nameError == "valid" && this.state.imageError =="valid" && this.state.vendorError =="valid" &&this.state.catError == "valid" && this.state.manfError == "valid" &&this.state.priceError =="valid" && this.state.quantityError =="valid" && this.state.ratingError =="valid" ){
+            // alert("press OK to continue")
         let productDetails = {
             "productCode" :this.state.code,
-            // "productImage": this.state.pimage,
+            "productImage": this.state.pimage,
             "productName": this.state.pname,
             "vendor":this.state.vendor,
             "category": this.state.pcat,
             "Manufacturer":this.state.manufacturer,
+            "color":this.state.color,
             "quantity": this.state.quantity,
             "price": this.state.price,
+            "rating":this.state.rating
             // "inStock": this.state.pstock
         }
         console.log("productDetails:",productDetails)
@@ -174,12 +201,12 @@ class addProduct extends React.Component {
                 <div id="addbox">
                     <center><b style={{color:"#1c8adb"}}>PRODUCT INFORMATION..!!</b></center>
                 <form>
+                    <p>ProductImage</p>
+                    <input type="text" id="pimage" placeholder="enter image" onChange={this.getPimage} ></input><span style={{ color: "red" }}>{this.state.imageError}</span>
+                    <br></br>
                     <p>ProductCode</p>
                     <input type="text" id="code" placeholder="enter productCode" onChange={this.getCode}></input><span style={{ color: "red" }}>{this.state.codeError}</span>
                     <br></br>
-                    {/* <p>ProductImage</p>
-                    <input type="file" id="pimage" onChange={this.getPimage} multiple accept='image/*'></input><span style={{ color: "red" }}>{this.state.imageError}</span>
-                    <br></br> */}
                     <p>ProductName</p>
                     <input type="text" id="pname" placeholder="enter productName" onChange={this.getPname}></input><span style={{ color: "red" }}>{this.state.nameError}</span>
                     <br></br>
@@ -192,19 +219,23 @@ class addProduct extends React.Component {
                         <option>Mobile</option>
                         <option>Laptop</option>
                         <option>Headphones</option>
-                        <option>Speaker</option>
                         <option>Camera</option>
-                        <option>Accesories</option>
                     </select><span style={{ color: "red" }}>{this.state.catError}</span>
                     <br></br>
                     <p>Manufacturer</p>
                     <input type="text" id="manufacturer" placeholder="enter manufacturer" onChange={this.getManufacturer}></input><span style={{ color: "red" }}>{this.state.manfError}</span>
+                    <br></br>
+                    <p>Color</p>
+                    <input type="text" id="color" placeholder="enter productColor" onChange={this.getColor}></input><span style={{ color: "red" }}>{this.state.codeError}</span>
                     <br></br>
                     <p>Price</p>
                     <input type="number" id="price" placeholder="enter Price" onChange={this.getPrice}></input><span style={{ color: "red" }}>{this.state.priceError}</span>
                     <br></br>
                     <p>Quantity</p>
                     <input type="number" id="quantity" placeholder="enter quantity" onChange={this.getQuantity}></input><span style={{ color: "red" }}>{this.state.quantityError}</span>
+                    <br></br>
+                    <p>Rating</p>
+                    <input type="number" id="rating" placeholder="enter product rating" onChange={this.getRating}></input><span style={{ color: "red" }}>{this.state.ratingError}</span>
                     <br></br><br></br>
                     {/* <p>InStock</p>
                     <input type="number" id="pstock" onChange={this.getPStock}></input><span style={{ color: "red" }}>{this.state.stockError}</span>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Chart } from 'react-google-charts';
 import Axios from 'axios';
+import './chart.css'
 class ChartComponent extends React.Component {
 
     constructor(props) {
@@ -95,29 +96,29 @@ class ChartComponent extends React.Component {
     render() {
         return (
             <div>
-                <h3 style={{marginLeft: "5%"}}>Stock of products based on category</h3>
-                <div style={{ display: 'flex', maxWidth: 1100, margin: "5%" }}>
+                <h3 style={{marginTop:"5%",marginLeft: "20%"}}>Stock of products based on category</h3>
+                <div style={{ display: 'flex',flexWrap:"wrap", maxWidth: 1000,marginTop:"5%",marginLeft:"20%" }}>
                     
-                    <Chart
+                   <Chart
                         chartType="Bar"
                         loader={<div>Loading Chart</div>}
                         data={this.state.barChartData}
-                        width="600px"
-                        height="300px"
+                        width="500px"
+                        height="400px"
                         legendToggle
                     />
                    
-                    <Chart
+                    {/* <Chart
                         chartType="PieChart"
                         loader={<div>Loading Chart</div>}
                         data={this.state.barChartData2}
                         options={{
                             title: 'Stock of all products'
                         }}
-                        width="600px"
+                        width="500px"
                         height="300px"
                         legendToggle
-                    />
+                    /> */}
 
                 </div>
             </div>

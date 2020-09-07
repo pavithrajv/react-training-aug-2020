@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Axios from 'axios';
 import '../login/login.css'
+import Header from '../../header/header';
 
 class LoginComponent extends React.Component {
     state = {
@@ -60,6 +61,8 @@ class LoginComponent extends React.Component {
 
     render() {
         return (
+            <div>
+                <Header></Header>
             <div id="loginbox">
                 <center><b>LOGIN HERE.!!</b></center>
                 <form style={{ marginTop: "30px" }}>
@@ -73,6 +76,7 @@ class LoginComponent extends React.Component {
                     <Link to='/register' id="reg">Don't have an account?,signup here</Link>
 
                 </form>
+                </div>
             </div>
         );
     }

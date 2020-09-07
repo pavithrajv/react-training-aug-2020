@@ -1,6 +1,7 @@
 import React from 'react';
 import Axios from 'axios';
 import { Link } from 'react-router-dom';
+import Header from '../../header/header';
 import './register.css'
 
 class RegisterComponent extends React.Component {
@@ -87,9 +88,6 @@ class RegisterComponent extends React.Component {
         if (this.state.cpwd == '' || this.state.cpwd != this.state.pwd) {
             this.setState({ cpwdError: 'Enter the same password again',buttonStatus:true })
         }
-        else if(this.state.cpwdError == "Enter the same password again"){
-            this.setState({buttonStatus:true})
-        }
         else {
             this.setState({ cpwdError: '', buttonStatus: false })
         }
@@ -129,6 +127,8 @@ class RegisterComponent extends React.Component {
 
     render() {
         return (
+            <div>
+                <Header></Header>
             <div id="registerbox">
                 <h2>REGISTER HERE.!!</h2>
                 <form>
@@ -151,6 +151,7 @@ class RegisterComponent extends React.Component {
                     <br></br><br></br>
                     <Link to='/login' id="reg">Already a member,login here..</Link>
                 </form>
+            </div>
             </div>
         );
     }

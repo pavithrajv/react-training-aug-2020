@@ -11,6 +11,7 @@ class DashboardComponent extends React.Component {
             <div>
                 
             <Navbar></Navbar>   
+            
             <ChartComponent></ChartComponent>
             
             </div>

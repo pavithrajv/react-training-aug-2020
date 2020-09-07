@@ -1,10 +1,11 @@
 #addbox{
 	width: 370px;
-	height: 550px;
+	height: max-content;
 	background-color: #effafa;
 	margin-top: 40px;
 	margin-left: 36%;
 	padding: 20px;
+	box-shadow: darkblue;
 }
 #addbox p{
 	font-size: 15px;
@@ -12,7 +13,7 @@
 #addbox input{
 	width: 100%;
 }
-#addbox input[type="text"],input[type="number"]{
+#addbox input[type="text"],input[type="number"],input[type="float"]{
 	border:none;
     border-bottom: 1px solid #1c8adb;
 	background: transparent;

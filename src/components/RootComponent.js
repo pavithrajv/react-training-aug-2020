@@ -7,7 +7,7 @@ class RootComponent extends React.Component {
     render() { 
         return ( 
             <div>
-                <Header></Header>
+                {/* <Header></Header> */}
                 <ContentComponent></ContentComponent>
             </div>
          );

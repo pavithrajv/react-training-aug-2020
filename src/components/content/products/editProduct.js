@@ -13,24 +13,26 @@ class editProduct extends React.Component {
         this.state={
             id:0,
             code:'',
-            // image:'../../../images/bg1.jpg',
+            image:'',
             name:'',
             vendor:'',
             category:'',
             manufacturer:'',
+            color:'',
             price:0,
             quantity:0,
+            rating:0
            // stock:0
         }
         
     }
     
     
-    // getPimage=(event)=>{
-    //     console.log(event.target.value)
-    //     this.setState({image:event.target.value})
-    //     this.setState({image:event.target.value.substr(12)})
-    // }
+    getPimage=(event)=>{
+        console.log(event.target.value)
+        this.setState({image:event.target.value})
+        //this.setState({image:event.target.value})
+    }
     
     getPname=(event)=>{
         console.log(event)
@@ -50,6 +52,10 @@ class editProduct extends React.Component {
         console.log(event.target.value)
         this.setState({manufacturer:event.target.value})
     }
+    getColor = (event) => {
+        console.log(event.target.value)
+        this.setState({ color: event.target.value })
+    }
     getPrice=(event)=>{
         console.log(event.target.value)
         this.setState({price:event.target.value})
@@ -57,6 +63,10 @@ class editProduct extends React.Component {
     getQuantity=(event)=>{
         console.log(event.target.value)
         this.setState({quantity:event.target.value})
+    }
+    getRating = (event) => {
+        console.log(event.target.value)
+        this.setState({ rating: event.target.value })
     }
     // getPStock=(event)=>{
     //     console.log(event.target.value)
@@ -72,13 +82,15 @@ class editProduct extends React.Component {
                 console.log(this.state.image)
                 this.setState({
                     code:response.data.productCode,
-                     //image:response.data.productImage,
+                    image:response.data.productImage,
                     name:response.data.productName,
                     vendor:response.data.vendor,
                     category:response.data.category,
                     manufacturer:response.data.Manufacturer,
+                    color:response.data.color,
                     quantity:response.data.quantity,
                     price:response.data.price,
+                    rating:response.data.rating
                     //stock:response.data.inStock    
                 })
             }).catch(error=>{
@@ -90,14 +102,16 @@ class editProduct extends React.Component {
     editProduct=()=>{
         console.log("in edit product..")
         let productDetails = {
-            // "productImage": this.state.image,
+            "productImage": this.state.image,
             "productCode":this.state.code,
             "productName":this.state.name,
             "vendor":this.state.vendor,
             "category":this.state.category,
             "Manufacturer":this.state.manufacturer,
+            "color":this.state.color,
             "quantity":this.state.quantity,
             "price":this.state.price,
+            "rating":this.state.rating
             // "inStock":this.state.stock
         }
         console.log("productDetails:",productDetails)
@@ -116,7 +130,7 @@ class editProduct extends React.Component {
         if(this.props.location.state === undefined){
             return (
                 <div>
-                    <h1>You cannot navigate to edit product from here!!!! </h1>
+                    <center><h1>You cannot navigate to edit product from here!!!! </h1></center>
                 </div>
             )
             }    
@@ -126,10 +140,10 @@ class editProduct extends React.Component {
                 <div id="editbox">
                     <center><b style={{color:"#1c8adb"}}>EDIT PRODUCT INFO.!!</b></center>
                 <form>
-                <p>ProductCode</p>
+                    <p>ProductCode</p>
                     <input type="text" value={this.state.code} readOnly></input><br></br>
-                    {/* <p>ProductImage</p>
-                    <input type="file" id="image" onChange={this.getPimage} readOnly multiple accept='image/*'></input><br></br> */}
+                    <p>ProductImage</p>
+                    <input type="text" id="image" value={this.state.image} onChange={this.getPimage} ></input><br></br>
                     <p>ProductName</p>
                     <input type="text" id="name" value={this.state.name} onChange={this.getPname}></input><br></br>
                     <p>Vendor</p>
@@ -147,10 +161,16 @@ class editProduct extends React.Component {
                     </select><br></br>
                     <p>Manufacturer</p>
                     <input type="text" id="manufacturer" value={this.state.manufacturer} onChange={this.getManufacturer}></input><br></br>
+                    <p>Color</p>
+                    <input type="text" id="color" value={this.state.color} onChange={this.getColor}></input><span style={{ color: "red" }}>{this.state.codeError}</span>
+                    <br></br>
                     <p>Price</p>
                     <input type="number" id="price" value={this.state.price} onChange={this.getPrice}></input><br></br>
                     <p>Quantity</p>
                     <input type="number" id="quantity" value={this.state.quantity} onChange={this.getQuantity}></input><br></br>
+                    <p>Rating</p>
+                    <input type="number" id="rating" value={this.state.rating} onChange={this.getRating}></input><span style={{ color: "red" }}>{this.state.ratingError}</span>
+                    <br></br>
                     {/* <p>InStock</p>
                     <input type="number" id="stock" value={this.state.stock} onChange={this.getPStock}></input><br></br> */}
                     <button id="edit" onClick={this.editProduct}>Update Product</button>

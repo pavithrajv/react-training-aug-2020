@@ -2,13 +2,14 @@ body{
 	margin: 0;
 	padding:0;
 	/* background-image: url(bg1.jpg); */
-	/* background-image: url(../../../images/bg1.jpg); */
+	background-image: url(../../../images/game_bg.png);
 	
 	background-attachment: fixed;
 	background-size:cover;
 	background-position:center;
 	font-family:sans-serif;
 	background-repeat: no-repeat;
+	
 }
 /* h2{
 	margin-top: 5px;

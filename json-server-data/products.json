@@ -1,94 +1,121 @@
 {
   "allproducts": [
     {
+      "productImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRzIAawu0TcaZkCnwnGTnv1oGfFU2EVn-3Sgg&usqp=CAU",
       "productCode": "REAL45",
       "productName": "Realme Mobile XT",
-      "vendor": "Vision star",
+      "vendor": "vision star",
       "category": "Mobile",
-      "Manufacturer": "REALME",
-      "quantity": "25",
-      "price": "10999",
+      "Manufacturer": "Manasa pvt ltd",
+      "color": "black",
+      "quantity": "27",
+      "price": "10921",
+      "rating": "3.4",
       "id": 2
     },
     {
+      "productImage": "https://images-na.ssl-images-amazon.com/images/I/41I39mJtjAL.jpg",
       "productCode": "CAN365",
       "productName": "Canon Waterproof Camera",
-      "vendor": "Supercomet",
+      "vendor": "Supercomettt",
       "category": "Camera",
-      "Manufacturer": "CANON",
+      "Manufacturer": "Sagar Traders",
+      "color": "red",
       "quantity": "20",
-      "price": "500",
+      "price": "507",
+      "rating": "4",
       "id": 3
     },
     {
+      "productImage": "https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/dell_client_products/notebooks/inspiron_notebooks/15_3582/pdp/notebook-inspiron-15-3582-in-pdp-gallery-504x350.jpg?fmt=jpg&wid=570&hei=400",
       "productCode": "DELP65",
       "productName": "Dell Touchscreen Laptop",
-      "category": "Laptop",
       "vendor": "Kanha Trading",
-      "Manufacturer": "DELL",
+      "category": "Laptop",
+      "Manufacturer": "Vimal Electronics",
+      "color": "black",
       "quantity": "20",
       "price": "30000",
+      "rating": "4.2",
       "id": 4
     },
     {
-      "productCode": "BOAT321",
+      "productImage": "https://www.reliancedigital.in/medias/Reconnect-RAWHB1001-Headphone-Headsets-491336259-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w2MDE3N3xpbWFnZS9qcGVnfGltYWdlcy9oZmYvaDg5LzkwNDY5Mzg0NTE5OTguanBnfGJjNmIxODNkMmQ4Y2RlNDc1ZjllYTY1OWE5NTViMjhkNGRkMDVmZTVmN2I3Zjg5MzFjOWUyNWVlNjA0NzQ5OWE",
+      "productCode": "BOAT3219",
       "productName": "Boat Basshead Headphones",
+      "vendor": "Vision star",
       "category": "Headphones",
-      "vendor": "vision star",
-      "Manufacturer": "BOAT",
+      "Manufacturer": "Sagar Traders",
+      "color": "black",
       "quantity": "43",
       "price": "500",
+      "rating": "4",
       "id": 5
     },
     {
-      "productCode": "JBL534",
-      "productName": "JBL Bluetooth Speaker",
-      "vendor": "Corseca",
-      "category": "Speaker",
-      "Manufacturer": "JBL",
-      "quantity": "28",
-      "price": "2159",
-      "id": 6
-    },
-    {
-      "productCode": "APP841",
-      "productName": "Apple Digital Watch",
-      "vendor": "Sargam  pvt Ltd",
-      "category": "Accesories",
-      "Manufacturer": "APPLE",
-      "quantity": "24",
-      "price": "1549",
-      "id": 7
-    },
-    {
+      "productImage": "https://vlebazaar.in/image/cache/catalog//-Samsung-Galaxy-M40-Midnight-Blue-128-GB-6-GB-RAM/-Samsung-Galaxy-M40-Midnight-Blue-128-GB-6-GB-RAM-10-550x550h.jpg",
       "productCode": "SAM456",
       "productName": "Samsung Galaxy M40",
       "vendor": "vision star",
       "category": "Mobile",
-      "Manufacturer": "SAMSUNG",
+      "Manufacturer": "Akshay Traders",
+      "color": "black",
       "quantity": "20",
       "price": "14521",
+      "rating": "4.1",
       "id": 8
     },
     {
-      "productCode": "MIWL45",
-      "productName": "MI True Wireless Earphones",
-      "vendor": "vision star",
-      "category": "Headphones",
-      "Manufacturer": "MI",
-      "quantity": "30",
-      "price": "639",
-      "id": 9
-    },
-    {
+      "productImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ56w-CSNpnFZocm1sFyZ8hgVVsWsDpiewSXmPGVkBPvrWQVmq-d6HbJrsDpjdIyuQLJy5E7v8&usqp=CAc",
       "productCode": "LEN025",
-      "productName": "HP Elitebook Folio Laptop",
+      "productName": "Lenovo Elitebookzz Folio Laptop",
       "vendor": "Sargam pvt ltd",
       "category": "Laptop",
-      "Manufacturer": "HP",
+      "Manufacturer": "Manasa pvt ltd",
+      "color": "black",
       "quantity": "20",
       "price": "23199",
+      "rating": "4",
       "id": 10
+    },
+    {
+      "productImage": "https://www.sony.co.in/image/34e9d1785ae0e2cca4576de8e1c1a95e?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF",
+      "productCode": "SONY239",
+      "productName": "Sony Alpha ILCE5100L 24.3MP Mirrorless Camera",
+      "vendor": "SuperComet",
+      "category": "Camera",
+      "Manufacturer": "Sagar Traders",
+      "color": "black",
+      "quantity": "40",
+      "price": "32891",
+      "rating": "3.9",
+      "id": 11
+    },
+    {
+      "productImage": "https://www.sathya.in/Media/Default/Thumbs/0038/0038758-oneplus-mobile-7t-8gb-128gb-glacier-blue.jpg",
+      "productCode": "ONE761",
+      "productName": "OnePlus 7T (Glacier Blue, Fluid AMOLED Display)",
+      "vendor": "Vision star",
+      "category": "Mobile",
+      "Manufacturer": "Vimal Electronics",
+      "color": "black",
+      "quantity": "9",
+      "price": "42317",
+      "rating": "4",
+      "id": 15
+    },
+    {
+      "productImage": "https://www.sathya.in/Media/Default/Thumbs/0038/0038758-oneplus-mobile-7t-8gb-128gb-glacier-blue.jpg",
+      "productCode": "MIHS123",
+      "productName": "test product",
+      "vendor": "vision star",
+      "category": "Mobile",
+      "Manufacturer": "Sagar Traders",
+      "color": "red",
+      "quantity": "17",
+      "price": "89",
+      "rating": "4",
+      "id": 16
     }
   ],
   "allusers": [
@@ -115,14 +142,6 @@
       "userid": "test",
       "pwd": "test",
       "cpwd": "test"
-    },
-    {
-      "id": "dsgvwgw",
-      "name": "fshshsf",
-      "email": "rehrgew@gmail.com",
-      "userid": "dsgvwgw",
-      "pwd": "",
-      "cpwd": ""
     }
   ]
 }

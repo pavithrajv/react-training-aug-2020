@@ -3,7 +3,7 @@
     border-collapse: collapse;
     width: 75%;
     margin-left: 8%;
-    margin-top: 6%;
+    margin-top: 20px;
     border: transparent;
   }
   #customers td
@@ -27,31 +27,42 @@
       color: white;
     }
     #addpro{
-    width: 180px;
-    height: 40px;
-    
+    width: 140px;
+    height: 30px;
     border: none;
     border-radius: 25px;
     background-color: transparent;
     border: 1px solid grey;
-    
-    /* margin-right: -650px; */
-    
-    font-size: 20px;
+    color: grey;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 20px;
     }
     #search{
       float: left;
-      
-      width: 250px;
-      height: 30px;
-      border-radius: 15px;
+      width: 180px;
+      height: 25px;
+      border-radius: 10px;
       border: 1px solid grey;
       text-align: center;
-      font-size: 20px;
+      font-size: 15px;
+     margin-left: 70px;
+      margin-top: 20px;
     }
     li{
       float: left;
       list-style: none;
       font-size: 13px;
       padding-left: 100px;
+  }
+  .sort{
+    float: left;
+    width: 180px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    color: grey;
+    font-size: 15px;
+   margin-left: 70px;
+    margin-top: 20px;
   }
